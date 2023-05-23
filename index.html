@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Магазин "Стиль"</title>
+</head>
+<body>
+    <header>
+        <script>
+            // Получаем элемент навигации
+            const nav = (style.css).querySelector('nav');
+            nav.style.backgroundColor = '#ff0000';
+
+            // Слушаем событие скролла на странице
+            window.addEventListener('scroll', function() {
+            // Если скролл вверх
+            if (window.scrollY < 0) {
+                // Меняем фон на зеленый с анимацией
+                nav.style.backgroundColor = '#00ff00';
+                nav.style.transition = 'background-color 0.5s ease';
+            } else {
+                // Возвращаем исходный цвет фона
+                nav.style.backgroundColor = '#f5f9fd';
+            }
+            });
+        </script>
+        <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#"><img src="media/logo.jfif" class="round" alt="logo"></a></li>
+            </ul>
+          </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+body {
+    background: no-repeat;
+    background-image: url(/media/background.jfif);
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+nav {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 5px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
+
+/* Голубые оттенки */
+nav {
+  background-color: #f5f9fd;
+}
+
+nav a {
+  color: #333;
+}
+
+nav a:hover {
+  color: #00a7d0;
+}
+
+.round {
+    width: 120px;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 7px #666;
+}
